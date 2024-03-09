@@ -1,0 +1,66 @@
+@import "default_style.css"; 
+
+#my_page{
+   margin: 100px auto;
+   width: 970px;
+   height: 700px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+#my_page h1{
+   font-size: 30px;
+}
+#my_page .info_box{
+   width: 700px;
+   height: 140px;
+   border-top: 1px solid #ccc;
+}
+#my_page .info_box .box{
+   width: 700px;
+   height: 70px;
+   display: flex;
+   line-height: 70px;
+   text-align: left;
+   text-indent: 15px;
+   border-bottom: 1px solid #ccc;
+   font-weight: bold;
+}
+#my_page .info_box p{
+   width: 250px;
+   height: 70px;
+   background-color: #F8F2E3;
+}
+#my_page .info_box span{
+   width: 450px;
+   height: 70px;
+}
+#my_page .button{
+   width: 150px;
+   height: 205px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+#my_page .icon{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-color: #F8F2E3;
+   position: relative;
+}
+#my_page .buttons{
+   width: 970px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+#my_page .icon img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}

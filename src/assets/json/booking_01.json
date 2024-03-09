@@ -1,0 +1,22 @@
+{    
+    "JEJU" : [
+        {
+            "no" : [],
+            "member" : [],
+            "member_phone" : [],
+            "headcount" : [],
+            "date" : [],
+            "time" : [],
+            "zone" : [
+                {
+                    "hole" : { "table_num" : [] },
+                    "ocean" : { "table_num" : [] },
+                    "terrace" : { "table_num" : [] },
+                    "room" : { "table_num" : [] }                    
+                }
+            ]            
+        }
+    ],
+    "SEOUL" : [],
+    "BUSAN" : []
+}

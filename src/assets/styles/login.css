@@ -1,0 +1,138 @@
+@import url('./default_style.css'); 
+
+#login_section{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.login_form{
+    margin: 220px auto;
+    width: 600px;
+    height: 485px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.tab>h3{
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: #F2E7CC;
+    border: 1px solid #59574F;
+}
+.tab>h3.tab_active{
+    background: #ffffff;
+    border-bottom: 0px;
+}
+.tab>div{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    overflow: hidden;
+    width: 600px;
+    height: 430px;
+    display: none;
+}
+.tab>div.active{
+    display: block;
+}
+.tab form{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.tab form>input{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.tab form>input:nth-of-type(1){
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+.tab form>input:nth-of-type(2){
+    margin-bottom: 75px;
+}
+.btn{
+    width: 250px;
+    height: 80px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    border: 0;
+    margin-bottom: 35px;
+}
+.blue{
+    background: #92A8C0;
+}
+.beige{
+    background: #F2E7CC;
+}
+.sub{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#pop{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+.pop_up{
+    width: 600px;
+    height: 300px;
+    background: #FFFDF9;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pop_up>div{
+    margin-top: 75px;
+    margin-bottom: 80px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.pop_up{
+    margin-bottom: 50px;
+}
+#pop.pop_open{
+    display: block;
+}
+#pop.pop_close{
+    display: none;
+}
+.close_btn{
+    width: 25px;
+    height: 25px;
+    background: url('../images/close.png') center;
+    position: absolute;
+    top: -50px;
+    right: 25px;
+    z-index: 9999;
+}
+.btn_box{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    position: absolute;
+    top: 100px;
+}
+.pop_text{
+    text-align: center;
+    line-height: 50px;
+}

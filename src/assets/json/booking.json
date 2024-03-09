@@ -1,0 +1,42 @@
+{
+    "JEJU" : [
+        {
+            "member" : "",
+            "member_phone" : "",
+            "person" : "",
+            "date" : "",
+            "time" : "",
+            "table" : "",
+            "price" : 0
+        },
+        {
+            "member" : "서보건",
+            "member_phone" : "01026057956",
+            "person" : "4명",
+            "date" : "",
+            "time" : "",
+            "table" : "hole",
+            "price" : 18000
+        },
+        {
+            "member" : "이소윤",
+            "member_phone" : "01092646489",
+            "person" : "2명",
+            "date" : "",
+            "time" : "",
+            "table" : "ocean",
+            "price" : 15000        
+        },
+        {
+            "member" : "박진서",
+            "member_phone" : "01087641854",
+            "person" : "4명",
+            "date" : "",
+            "time" : "",
+            "table" : "room",
+            "price" : 30000       
+        }
+    ],
+    "SEOUL" : [],
+    "BUSAN" : []
+}

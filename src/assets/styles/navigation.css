@@ -1,0 +1,225 @@
+/* 메인 nav -------------------------------------------- */
+
+#main_header {
+  width: 100%;
+  height: 94px;
+  background: #F8F2E3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  transition: all 0.3s; /* 모든 속성에 대한 0.3초 동안의 트랜지션 설정 */
+}
+
+#header_out_box{
+  width: 80%; 
+  height: 100%;
+  position: relative;
+  left: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_logo{
+  width: 300px; height: 100%;
+  margin-left: 50px;
+  /* background: #f5f65f; */
+  text-align: center;
+  line-height: 94px;
+  font-family: 'Cinzel';
+}
+.Logo {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transition: font-size 1s, top 1s, left 1s;
+  transition-timing-function: ease-in-out;
+}
+.no-transition {
+  transition: none !important; /* 트랜지션을 비활성화 */
+}
+.Logo.fixed {
+  font-size: 40px;
+  top: 10px;
+  left: 10px;
+}
+.nav_logo > h1 > a{
+  font-size: 2em;
+}
+/* 메인 nav */
+.main_nav {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.main_nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_nav > ul > li {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_nav > ul p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_nav > ul a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+.main_nav > ul .main_nav_select {
+  width: 100%;
+  height: 16px;
+  background: #5185C4;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.5s; /* 투명도에 대한 0.5초 동안의 트랜지션 설정 */
+}
+
+.main_nav>ul ul{display: none;}
+
+/* 메인 nav 추가 스타일 */
+.main_nav_line {
+  width: 100%;
+  height: 2px;
+  background: #5185C4;
+  position: absolute;
+  left: 0;
+  top: 76px;
+}
+
+.main_nav_slide_back {
+  width: 100%;
+  height: 0px;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(0px);
+}
+
+/* 메인 nav hover -------------------------------------------- */
+.main_nav > ul li:hover .main_nav_select {
+  opacity: 1;
+}
+
+.main_nav > ul li:hover .gnb1 li,
+.main_nav > ul li:hover .gnb2 li,
+.main_nav > ul li:hover .gnb3 li {
+  opacity: 3;
+}
+
+.gnb1,
+.gnb2,
+.gnb3 {
+  width: 300px;
+  position: absolute;
+  top: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.gnb1 li,
+.gnb2 li,
+.gnb3 li {
+  width: 100%;
+  height: 54px;
+  line-height: 60px;
+  opacity: 0;
+  transition: opacity 0.5s; /* 투명도에 대한 0.5초 동안의 트랜지션 설정 */
+}
+
+
+/* 서브 nav -------------------------------------------- */
+.sub_nav {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #F2E7CC;
+}
+
+.reserbox {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.main_nav_reservation_back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.sub_nav > ul {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F2E3;
+  line-height: 20px;
+}
+
+.sub_nav > ul a {
+  font-size: 13px;
+}
+
+.sub_nav > div > p > div {
+  width: 100%;
+  height: 16px;
+  background: #5185C4;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.5s; /* 투명도에 대한 0.5초 동안의 트랜지션 설정 */
+}
+
+.reserbox > .main_nav_select1 {
+  width: 100%;
+  height: 2px;
+  background: #5185C4;
+  position: absolute;
+  left: 0;
+  top: 76px;
+}
+
+.reserbox > p > a:hover + .main_nav_select1 {
+  opacity: 1;
+}

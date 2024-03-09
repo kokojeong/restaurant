@@ -1,0 +1,701 @@
+@import url('./default_style.css');
+
+/*------ 사이드 메뉴 ------*/
+#main_form{
+    width: 100vw;
+    height: 2800px;
+}
+
+.side_menu{
+    width: 25%;
+    height: 900px;
+    background-color: #F2E7CC;
+    position: sticky;
+    left: 80%;
+    top: 9%;
+    z-index: 1;
+}
+.side_menu > aside{
+margin: 40px auto;
+padding: 30px;
+}
+.side_menu > aside > .aside_top{
+width: 300px;
+height: 100px;
+display: flex;
+flex-direction: column;
+margin-top: 25px;
+}
+.side_menu > aside > .aside_top > h3{
+font-size: 24px;
+margin-bottom: 5px;
+}
+.side_menu > aside > .aside_top > .top_slide_back{
+border-bottom: 3px solid;
+width: 400px;
+height: 10px;
+}
+.side_menu > aside > .aside_mid1 {
+width: 300px;
+height: 80px;
+}
+.side_menu > aside > .aside_mid1 > p{
+font-size: 18px;
+margin-bottom: 15px;
+margin-left: 30px;
+}
+.side_menu > aside > .aside_mid1 > .mid1_slide_back{
+border-bottom: 1px solid;
+width: 400px;
+}
+.side_menu > aside > .aside_mid2 {
+width: 300px;
+height: 140px;
+}
+.side_menu > aside > .aside_mid2 > p{
+font-size: 18px;
+margin-bottom: 15px;
+margin-left: 30px;
+}
+.side_menu > aside > .aside_mid2 > .mid2_slide_back{
+border-bottom: 1px solid;
+width: 400px;
+}
+.side_menu > aside > .aside_mid3{
+height: 80px;
+}
+.side_menu > aside > .aside_mid3 > p{
+font-size: 18px;
+margin-bottom: 15px;
+margin-left: 30px;
+}
+.side_menu > aside > .aside_mid3 > .mid3_slide_back{
+border-bottom: 3px solid;
+width: 400px;
+}
+.side_menu > aside > .aside_bot1 {
+width: 500px;
+height: 100px;
+display: flex;
+justify-content: flex-end;
+margin-bottom: 70px;
+}
+.side_menu > aside > .aside_bot1 > .bot1_pay{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left: 15px;
+}
+.side_menu > aside > .aside_bot1 > .bot1_pay >p:nth-child(1){
+font-size: 16px;
+margin-right: 40px;
+margin-bottom: 10px;
+font-weight: 500;
+
+}
+.side_menu > aside > .aside_bot1 > .bot1_pay >p:nth-child(2){
+font-size: 36px;
+margin-right: 40px;
+font-weight: bold;
+}
+.side_menu > aside > .aside_bot1 > button{
+width: 80px;
+height: 80px;
+text-align: center;
+line-height: 80px;
+background-color: #6D8FB4;
+color: #fff;
+margin-right: 100px;
+border-radius: 10px;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+border: 0;
+font-size: 26px;
+}
+.side_menu > aside > .aside_bot2 > ul{
+margin-bottom: 10px;
+margin-left: 20px;
+}
+.side_menu > aside > .aside_bot2 > ul > li {
+list-style: disc;
+line-height: 25px;
+}
+.side_menu > aside > .aside_bot2 > a{
+display: block;
+width: 120px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+background-color: #BFBEBB;
+color: #fff;
+border-radius: 10px;
+margin-left: 30px;
+}
+
+/*------------ Store 부분 --------*/
+
+.main_step1{
+position: absolute;
+top: 2%;
+width: 75%;
+height: 700px;
+display: flex;
+justify-content: left;
+align-items: center;
+flex-direction: column;
+/* margin-bottom: 300px; */
+}
+.step1_top{
+margin-right: 20px;
+margin-top: 200px;
+margin-bottom: 80px;
+}
+.main_step1 > div > span:nth-child(1){
+font-size: 20px;
+margin-left: 15px;
+font-family: 'Cinzel';
+font-weight: 600;
+}
+.main_step1 > div > span:nth-child(2){
+font-size:  26px;
+margin-left: 15px;
+font-weight: bold;
+}
+.main_step1 > div > .slide_back {
+width: 1200px;
+border-bottom: 1px solid;
+margin-top: 20px;
+}
+.spot_main{
+width: 1100px;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 100px;
+/* margin-bottom: 80px; */
+}
+.spot_main > .store  > input {
+display: none;
+}
+.spot_main > .store {
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+}
+.spot_main > .store> label {
+display: block;
+width: 276px;
+height: 350px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+margin-bottom: 25px;
+border-radius: 10px;
+box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+.spot_main > .seoul > label{
+background-image: url(/src/assets/images/Seoul.png);
+}
+.spot_main > .busan > label{
+background-image: url(/src/assets/images/Busan.jpg);
+}
+.spot_main > .jeju> label{
+background-image: url(/src/assets/images/Jeju.jpg);
+}
+.spot_main > .store > .check {
+width: 112px;
+height: 112px;
+background-image: url(/src/assets/images/check.png);
+position: absolute;
+top: 30%;
+z-index: -1;
+}
+.spot_main > .store> input[type=radio]:checked+label {
+opacity: 0.6;
+z-index: -2;
+}
+.store.selected p {
+font-weight: bold;
+}
+.spot_main > .store.selected > label {
+    opacity: 0.6;
+    z-index: -2;
+}
+
+/* ---------메인 스텝2---------- */
+
+.main_step2{
+width: 75%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+/* margin-bottom: 100px; */
+}
+
+/*----------- PERSON 부분 -----------*/
+
+.step2_main{
+height: 100px;
+margin-right: 20px;
+margin-bottom: 120px;
+margin-top: 150px;
+}
+.main_step2 > div > span:nth-child(1){
+font-size: 20px;
+margin-left: 15px;
+font-family: 'Cinzel';
+font-weight: 600;
+}
+.main_step2 > div > span:nth-child(2){
+font-size:  26px;
+margin-left: 15px;
+font-weight: bold;
+}
+.main_step2 > div > .step2_slide_back {
+width: 1200px;
+border-bottom: 1px solid;
+margin-top: 15px;
+margin-bottom: 20px;
+}
+.main_step2 > .step2_main > .step2_person{
+width: 1200px;
+height: 20px;
+display: flex;
+justify-content: space-between;
+margin: 0 auto;
+}
+.main_step2 > .step2_main > .step2_person > ul{
+width: 500px;
+}
+.main_step2 > .step2_main > .step2_person > ul >li {
+list-style: disc;
+margin-left: 40px;
+}
+.main_step2 > .step2_main > .step2_person > form{
+width: 600px;
+display: flex;
+justify-content: space-between;
+margin-left: auto;
+}
+.select_index input[type=radio]{
+display: none;
+}
+.select_index input[type=radio]+label{
+display: inline-block;
+cursor: pointer;
+height: 40px;
+width: 70px;
+border: 1px solid #333;
+line-height: 40px;
+text-align: center;
+font-weight:bold;
+font-size:13px;
+margin-left: 10px;
+}
+.select_index input[type=radio]+label{
+background-color: #fff;
+color: #333;
+}
+.select_index input[type=radio]:checked+label{
+background-color: #59574F;
+color: #fff;
+}
+
+/*----------- DATE 부분 -----------*/
+.main_step3{
+height: 100px;
+margin-right: 20px;
+margin-bottom: 110px;
+}
+.main_step3 > div > span:nth-child(1){
+font-size: 20px;
+margin-left: 15px;
+font-family: 'Cinzel';
+font-weight: 600;
+}
+.main_step3 > div > span:nth-child(2){
+font-size:  26px;
+margin-left: 15px;
+font-weight: bold;
+}
+.main_step3 > div > .step3_slide_back {
+width: 1200px;
+border-bottom: 1px solid;
+margin-top: 15px;
+margin-bottom: 20px;
+}
+.main_step3 > .step3 > .date {
+width: 1200px;
+height: 40px;
+display: flex;
+justify-content: space-between;
+}
+.main_step3 > .step3 > .date > ul >li {
+list-style-type: disc;
+margin-left: 40px;
+}
+.main_step3 > .step3 > .date > div > input{
+width: 300px;
+height: 40px;
+text-align: center;
+font-size: 20px;
+}
+
+/*----------- TIME 부분 -----------*/
+
+.main_step4{
+margin-right: 20px;
+margin-bottom: 350px;
+}
+.main_step4 > .step4_body > span:nth-child(1){
+font-size: 20px;
+margin-left: 15px;
+font-family: 'Cinzel';
+font-weight: 600;
+}
+.main_step4 > .step4_body > span:nth-child(2){
+font-size:  26px;
+margin-left: 15px;
+font-weight: bold;
+
+}
+.main_step4 > .step4_body > .step4_slide_back {
+width: 1200px;
+border-bottom: 1px solid;
+margin-top: 15px;
+margin-bottom: 20px;
+}
+.main_step4 > .step4_body > .time {
+width: 1200px;
+height: 60px;
+display: flex;
+justify-content: space-between;
+}
+.main_step4 > .step4_body > .time > ul > li {
+list-style: disc;
+margin-left: 40px;
+}
+.main_step4 > .step4_body > .time > article {
+width: 600px;
+height: 150px;
+border-top: 3px solid #222;
+}
+.main_step4 > .step4_body > .time > article > .tabBtn {
+height: 30px;
+}
+.main_step4 > .step4_body > .time > article > .tabBtn >label{
+display: block;
+width: 300px;
+height: 40px;
+float: left;
+text-align: center;
+line-height: 29px;
+font-weight: bold;
+border-bottom: 0;
+background: #BFBEBB;
+color: #59574F;
+box-sizing: border-box;
+}
+.article_main > input:nth-of-type(1):checked~.tabBtn > label:nth-of-type(1){
+background: #fffEFE; color: #222;
+}
+.article_main > input:nth-of-type(2):checked~.tabBtn > label:nth-of-type(2){
+background: #fffEFE; color: #222;
+}
+.article_main >input{
+display: none;
+}
+.article_main > .panel_index {
+height: 90px;
+padding: 8px 10px;
+border-top: 0px;
+line-height: 1.8em;
+display: none;
+}
+.article_main > .panel_index > div{
+display: flex;
+flex-direction: column;
+margin-left: 90px;
+margin-top: 20px;
+}
+.article_main > .panel_index > div > span:nth-of-type(1) {
+position: relative;
+font-size: 26px;
+top: -25%;
+left: 50%;
+}
+.article_main > .panel_index > div > span:nth-of-type(2) {
+position: relative;
+font-size: 26px;
+top: -25%;
+left: 50%;
+}
+.article_main > .panel_index > div >input{
+display: none;
+}
+.article_main > .panel_index > div > input[type=radio]+label {
+width: 170px;
+height: 40px;
+border: 1px solid #222;
+text-align: center;
+line-height: 40px;
+cursor: pointer;
+}
+.article_main > .panel_index > div > input[type=radio]:checked+label{
+background-color: #59574F;
+color: #fff;
+}
+.article_main > input:nth-of-type(1):checked ~ .panel_index:nth-of-type(1) {
+display: flex;
+flex-direction: column;
+}
+
+.article_main > input:nth-of-type(2):checked ~ .panel_index:nth-of-type(2) {
+display: flex;
+flex-direction: column;
+}
+
+/* 예약 table : header , info --------------------------------------- */
+#booking_table_box{
+    /* font-family: 'SCoreDream';
+    color: #59574F; */
+    /* width: 100%; */ 
+    height: auto;
+    margin-bottom: 100px;
+    /* position: relative; */
+}
+
+    .booking_table_header{
+        /* background: #c6e8dc; */
+        width: 1190px; height: 50px;
+        /* margin-left: 125px; */
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        border-bottom: 1px solid #59574F;
+    }
+    .booking_table_header > p{
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-family: 'Cinzel';
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .booking_table_header > h3{
+        width: 150px;
+        margin-left: 26px;
+        margin-bottom: 10px;    
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .booking_contents_wrap{
+        width: 1190px; height: auto;
+        /* margin-left: 125px; */
+        margin-bottom: 200px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+        .booking_table_info{
+            /* background: #ffeeee; */
+            width: 432px; height: auto;
+            margin-left: 30px;
+            margin-bottom: 50px;
+            list-style: disc;
+            line-height: 30px;
+            letter-spacing: -1px;
+        }
+        .booking_table_info>li{
+            font-size: 16px;
+        }
+        
+/* 예약 table : table_zone -------------------------------------------- */
+        .booking_table_zone{
+            width: 1190px; height: 570px;
+            /* border: 1px solid #333; */
+            position: absolute;
+            left: 0; top: 0;
+            display: flex;
+            justify-content: end;
+        }
+            .zone{
+                width: 160px; height: 200px;
+                margin: 35px 0 0 10px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+                .zone > p:first-child {
+                    font-size: 28px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                .zone > p:last-child {
+                    color: #59574F;
+                }
+            .hole_bg{
+                background: #BFBEBB;
+                color: #807E79;
+            }
+            .ocean_bg{
+                background: #baf0ff;
+                color: #72b4c7;
+            }
+            .terrace_bg{
+                background: #c5ffd9;
+                color: #77d498;
+            }
+            .room_bg{
+                background: #ffdcdc;
+                color: #e9a0a0;
+            }
+/* checked -------------------------------------------- */    
+            .booking_table_zone .checked{
+                width: 160px; height: 200px;
+                background: url(/src/assets/images/check02.png) no-repeat center top;
+            }
+            
+            .table_img_wrap{
+                position: absolute;
+                left: 0; bottom: 0;
+                width: 100%; height: 300px;
+                /* background: #eaf4ff; */
+                display: flex;
+                gap: 10px;
+            }
+                .table_img_wrap > div{
+                    flex: 1; height: 100%;
+                    background-size: cover;
+                    opacity: 0;
+                    transition: all .5s ease-in-out;
+                }
+                /* .zone:hover ~ .table_img_wrap > div{
+                    opacity: 1;
+                } */
+/* 예약 table : hole_img -------------------------------------------- */                
+                .table_img_wrap > .hole_imgs1{
+                    background: url('../images/hole_table1.png') no-repeat center center;
+                }
+                .table_img_wrap > .hole_imgs2{
+                    background: url('../images/hole_table2.png') no-repeat center center;
+                }
+                .table_img_wrap > .hole_imgs3{
+                    background: url('../images/hole_table3.png') no-repeat center center;
+                }
+                .table_img_wrap > .hole_imgs4{
+                    background: url('../images/hole_table4.png') no-repeat center center;
+                }
+                .table_img_wrap > .hole_imgs5{
+                    background: url('../images/hole_table5.png') no-repeat center center;
+                }
+/* 예약 table : ocean_img -------------------------------------------- */
+                .table_img_wrap > .ocean_imgs1{
+                    background: url('../images/ocean_table1.png') no-repeat center center;
+                }
+                .table_img_wrap > .ocean_imgs2{
+                    background: url('../images/ocean_table2.png') no-repeat center center;
+                }
+                .table_img_wrap > .ocean_imgs3{
+                    background: url('../images/ocean_table3.png') no-repeat center center;
+                }
+                .table_img_wrap > .ocean_imgs4{
+                    background: url('../images/ocean_table4.png') no-repeat center center;
+                }
+                .table_img_wrap > .ocean_imgs5{
+                    background: url('../images/ocean_table5.png') no-repeat center center;
+                }
+/* 예약 table : terrace_img -------------------------------------------- */
+                .table_img_wrap > .terrace_imgs1{
+                    background: url('../images/terrace_table1.png') no-repeat center center;
+                }
+                .table_img_wrap > .terrace_imgs2{
+                    background: url('../images/terrace_table2.png') no-repeat center center;
+                }
+                .table_img_wrap > .terrace_imgs3{
+                    background: url('../images/terrace_table3.png') no-repeat center center;
+                }
+                .table_img_wrap > .terrace_imgs4{
+                    background: url('../images/terrace_table4.png') no-repeat center center;
+                }
+                .table_img_wrap > .terrace_imgs5{
+                    background: url('../images/terrace_table5.png') no-repeat center center;
+                }
+/* 예약 table : room_img -------------------------------------------- */
+                .table_img_wrap > .room_imgs1{
+                    background: url('../images/room_table1.png') no-repeat center center;
+                }
+                .table_img_wrap > .room_imgs2{
+                    background: url('../images/room_table2.png') no-repeat center center;
+                }
+                .table_img_wrap > .room_imgs3{
+                    background: url('../images/room_table3.png') no-repeat center center;
+                }
+                .table_img_wrap > .room_imgs4{
+                    background: url('../images/room_table4.png') no-repeat center center;
+                }
+                .table_img_wrap > .room_imgs5{
+                    background: url('../images/room_table5.png') no-repeat center center;
+                }
+
+/* 예약 confirming : 팝업 ---------------------------------------- */                
+#pop{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+.pop_up{
+    width: 600px;
+    height: 300px;
+    background: #FFFDF9;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pop_up>div{
+    margin-top: 75px;
+    margin-bottom: 80px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.pop_up{
+    margin-bottom: 50px;
+}
+#pop.pop_open{
+    display: block;
+}
+#pop.pop_close{
+    display: none;
+}
+.close_btn{
+    width: 25px;
+    height: 25px;
+    background: url('../images/close.png') center;
+    position: absolute;
+    top: -50px;
+    right: 25px;
+    z-index: 9999;
+}
+.btn_box{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    position: absolute;
+    top: 100px;
+}
+.pop_text{
+    text-align: center;
+    line-height: 50px;
+}
